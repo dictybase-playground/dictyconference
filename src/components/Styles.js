@@ -29,17 +29,20 @@ export const Title = styled.p`
 
 
 export const Button = styled.button`
-  font-size: 1.5rem;
-  font-weight: lighter;
-  border: 1px solid #005b96;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: white;
+  background: ${props => props.selected ? '#0b3861' : 'white'};
+  color: ${props => props.selected ? 'white' : '#0b3861'};
 
-  &:hover {
-    cursor: pointer;
-    background-color: #011f4b;
-    color: white;
-  }
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 5px; /* space between buttons */
+  padding: 10px 15px;
+  border: 2px solid #0b3861;
+  border-radius: 3px;
 `;
+
+
+// &:hover {
+//   cursor: pointer;
+//   background-color: #011f4b;
+//   color: white;
+// }

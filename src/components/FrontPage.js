@@ -1,15 +1,10 @@
 import React, { Component } from "react";
-import { Container, Division, Title, Button, NavBar } from "./Styles";
+import { Container, Division, Header, Title, SubTitle, Details, Button, NavBar } from "./Styles";
 
 class FrontPage extends Component {
   render() {
     return (
       <div>
-        <Container top>
-          <Title>
-            <center>Dictyostelium International Conference</center>
-          </Title>
-        </Container>
         <Container>
           <NavBar>
             <Button>Home</Button>
@@ -19,6 +14,14 @@ class FrontPage extends Component {
             <Button>Abstract</Button>
             <Button>Agenda</Button>
           </NavBar>
+        </Container>
+        <Container>
+          <Header>
+            <Title>Dicty 2018</Title>
+            <SubTitle>Annual International Dictyostelium Conference</SubTitle>
+            <Details>August 12 to August 16, 2018, The Netherlands</Details>
+            <Details>Egmond aan Zee</Details>
+          </Header>
         </Container>
         <Container>
 

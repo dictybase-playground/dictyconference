@@ -8,19 +8,40 @@ export const Container = styled.div`
   margin-left: auto;
 
 `
-export const Title = styled.p`
-  font-family: sans-serif;
+export const Header = styled.p`
   font-weight: lighter;
-  font-size: 4rem;
-  color: white;
 
-  background-image: url(${background});
   padding-top: 4%;
   padding-bottom: 4%;
   padding-left: 4%;
   padding-right: 4%;
 
+  color: white;
+  background-color: #011f4b;
+
+  text-align: center;
+
 `;
+
+export const Title = styled.h1`
+  font-size: 5em;
+  font-weight: lighter;
+`
+
+export const SubTitle = styled.h3`
+  position: relative;
+  bottom: 30px;
+  font-size: 2.5em;
+  font-weight: lighter;
+`
+
+export const Details = styled.h4`
+  position: relative;
+  bottom: 20px;
+
+  font-size: 1.2em;
+  font-weight: lighter;
+`
 
 export const NavBar = styled.div`
   position: fixed;
@@ -39,7 +60,6 @@ export const Button = styled.button`
   padding: 10px 15px;
   border: none;
   border-radius: 3px;
-
 
   &:hover {
     cursor: pointer;

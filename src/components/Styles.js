@@ -4,14 +4,17 @@ import background from "./blue-background.jpg"
 
 
 export const Container = styled.div`
+  position: relative;
+  bottom: 55px;
   color: ${props => props.dark ? 'white' : 'black'};
   padding-bottom: 4%;
 `
 export const Header = styled.p`
   font-weight: lighter;
-  padding-top: 1%;
+  padding-top: 10%;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
 
   color: white;
   background: linear-gradient(#011f4b, #428bca);
@@ -23,8 +26,13 @@ export const Container2 = Container.extend`
   background-color: #011f4b;
 `
 
+export const Container3 = Container.extend`
+  background-color: #428bca;
+`
 
 export const Title = styled.h1`
+  position: relative;
+  bottom: 50px;
   font-size: 5em;
   font-weight: lighter;
 `
@@ -51,7 +59,6 @@ export const NavBar = styled.div`
   height: 61px;
 
   padding-top: 1%;
-  padding-bottom: 1%;
   z-index: 1;
 
 `
@@ -73,13 +80,18 @@ export const ArrowDown2 = ArrowDown1.extend`
   border-top: 50px solid white;
 `
 
+export const ArrowDown3 = ArrowDown1.extend`
+  position: relative;
+  top: 0px;
+  border-top: 50px solid #011f4b;
+`
 
 export const Button = styled.button`
 
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: lighter;
   margin: 5px; /* space between buttons */
-  padding: 10px 15px;
+  padding: 10px 10px;
   border: 2px solid white;
   color: white;
   border-radius: 3px;

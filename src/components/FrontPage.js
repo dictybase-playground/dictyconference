@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import { Container, Container2, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown1, ArrowDown2, WhiteText } from "./Styles";
+import { Container, Container2, Container3, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown1, ArrowDown2, ArrowDown3 } from "./Styles";
 
 class FrontPage extends Component {
   render() {
     return (
-      <Container>
+      <div>
+        <NavBar>
+          <center>
+            <Button>Home</Button>
+            <Button>Venue</Button>
+            <Button>Travel</Button>
+            <Button>Registration</Button>
+            <Button>Abstract</Button>
+            <Button>Agenda</Button>
+          </center>
+        </NavBar>
         <Container>
-          <NavBar>
-            <center>
-              <Button>Home</Button>
-              <Button>Venue</Button>
-              <Button>Travel</Button>
-              <Button>Registration</Button>
-              <Button>Abstract</Button>
-              <Button>Agenda</Button>
-            </center>
-          </NavBar>
         </Container>
         <Container>
           <Header>
@@ -41,12 +41,22 @@ class FrontPage extends Component {
         <Container2 dark>
           <center>
             <ArrowDown2 />
+            <Container />
             <Title>Travel</Title>
             <Details>Information about venue (to be added)</Details>
           </center>
         </Container2>
 
-      </Container>
+        <Container3 dark>
+          <center>
+            <ArrowDown3 />
+            <Container />
+            <Title>Registration</Title>
+            <Details>Information about registration</Details>
+          </center>
+        </Container3>
+
+      </div>
     );
   }
 }

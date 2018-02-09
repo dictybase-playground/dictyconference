@@ -11,8 +11,14 @@ class FrontPage extends Component {
           </Title>
         </Container>
         <Container>
-          <Button selected>Home</Button>
-          <Button>Venue</Button>
+          <center>
+            <Button>Home</Button>
+            <Button>Venue</Button>
+            <Button>Travel</Button>
+            <Button>Registration</Button>
+            <Button>Abstract</Button>
+            <Button>Agenda</Button>
+          </center>
         </Container>
       </div>
     );

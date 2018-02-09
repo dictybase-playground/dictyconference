@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown } from "./Styles";
+import { Container, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown1, ArrowDown2 } from "./Styles";
 
 class FrontPage extends Component {
   render() {
@@ -25,13 +25,30 @@ class FrontPage extends Component {
             <Details>Egmond aan Zee</Details>
           </Header>
         </Container>
+
         <center>
-          <ArrowDown />
+          <ArrowDown1 />
         </center>
 
         <Container>
-
+          <center>
+            <Title>Venue</Title>
+            <Details dark>Information about venue (to be added)</Details>
+          </center>
         </Container>
+
+
+        <Container>
+          <center>
+            <ArrowDown2 />
+          </center>
+          
+          <center>
+            <Title>Venue</Title>
+            <Details dark>Information about venue (to be added)</Details>
+          </center>
+        </Container>
+
       </Container>
     );
   }

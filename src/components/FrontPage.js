@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import scrollToComponent from 'react-scroll-to-component';
+
 import { Container, Container2, Container3, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown1, ArrowDown2, ArrowDown3 } from "./Styles";
 
 class FrontPage extends Component {
@@ -9,7 +11,7 @@ class FrontPage extends Component {
           <center>
             <Button>Home</Button>
             <Button>Venue</Button>
-            <Button>Travel</Button>
+            <Button onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
             <Button>Registration</Button>
             <Button>Abstract</Button>
             <Button>Agenda</Button>
@@ -26,7 +28,7 @@ class FrontPage extends Component {
           </Header>
         </Container>
 
-        <Container>
+        <Container className="Venue">
           <center>
             <ArrowDown1 />
           </center>
@@ -38,7 +40,7 @@ class FrontPage extends Component {
         </Container>
 
 
-        <Container2 dark>
+        <Container2 dark className="Travel" ref={(section) => { this.Travel = section; }}>
           <center>
             <ArrowDown2 />
             <Container />

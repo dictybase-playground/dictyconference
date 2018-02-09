@@ -4,12 +4,13 @@ import background from "./blue-background.jpg"
 
 
 export const Container = styled.div`
-
+  color: ${props => props.dark ? 'white' : 'black'};
+  padding-bottom: 5%;
 `
 export const Header = styled.p`
   font-weight: lighter;
 
-  padding-top: 10%;
+  padding-top: 4%;
   padding-bottom: 4%;
   padding-left: 4%;
   padding-right: 4%;
@@ -19,6 +20,11 @@ export const Header = styled.p`
   text-align: center;
 
 `;
+
+export const Container2 = Container.extend`
+  background-color: #011f4b;
+`
+
 
 export const Title = styled.h1`
   font-size: 5em;
@@ -42,15 +48,15 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   position: fixed;
-  top: 5%;
-  left: 10%;
-  right: 10%;
+  background-color: #011f4b;
+  width: 100%;
+  z-index: 1;
 
 `
 
 export const ArrowDown1 = styled.div`
   position: relative;
-  bottom: 16px;
+  bottom: 63px;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -60,6 +66,8 @@ export const ArrowDown1 = styled.div`
 `
 
 export const ArrowDown2 = ArrowDown1.extend`
+  position: relative;
+  top: 0px;
   border-top: 50px solid white;
 `
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown1, ArrowDown2 } from "./Styles";
+import { Container, Container2, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown1, ArrowDown2, WhiteText } from "./Styles";
 
 class FrontPage extends Component {
   render() {
@@ -26,28 +26,25 @@ class FrontPage extends Component {
           </Header>
         </Container>
 
-        <center>
-          <ArrowDown1 />
-        </center>
-
         <Container>
           <center>
+            <ArrowDown1 />
+          </center>
+
+          <center>
             <Title>Venue</Title>
-            <Details dark>Information about venue (to be added)</Details>
+            <Details>Information about venue (to be added)</Details>
           </center>
         </Container>
 
 
-        <Container>
+        <Container2 dark>
           <center>
             <ArrowDown2 />
+            <Title>Travel</Title>
+            <Details>Information about venue (to be added)</Details>
           </center>
-          
-          <center>
-            <Title>Venue</Title>
-            <Details dark>Information about venue (to be added)</Details>
-          </center>
-        </Container>
+        </Container2>
 
       </Container>
     );

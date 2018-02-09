@@ -7,12 +7,14 @@ class FrontPage extends Component {
       <Container>
         <Container>
           <NavBar>
-            <Button>Home</Button>
-            <Button>Venue</Button>
-            <Button>Travel</Button>
-            <Button>Registration</Button>
-            <Button>Abstract</Button>
-            <Button>Agenda</Button>
+            <center>
+              <Button>Home</Button>
+              <Button>Venue</Button>
+              <Button>Travel</Button>
+              <Button>Registration</Button>
+              <Button>Abstract</Button>
+              <Button>Agenda</Button>
+            </center>
           </NavBar>
         </Container>
         <Container>

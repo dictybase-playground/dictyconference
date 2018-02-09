@@ -42,8 +42,10 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   position: fixed;
-  top: 10px;
-  right: 0;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+
 `
 
 

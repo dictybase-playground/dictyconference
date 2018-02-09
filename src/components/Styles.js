@@ -4,21 +4,18 @@ import background from "./blue-background.jpg"
 
 
 export const Container = styled.div`
-  margin-right: auto;
-  margin-left: auto;
 
 `
 export const Header = styled.p`
   font-weight: lighter;
 
-  padding-top: 4%;
+  padding-top: 10%;
   padding-bottom: 4%;
   padding-left: 4%;
   padding-right: 4%;
 
   color: white;
-  background-color: #011f4b;
-
+  background: linear-gradient(#011f4b, #428bca);
   text-align: center;
 
 `;
@@ -45,26 +42,27 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   position: fixed;
-  top: 0;
+  top: 10px;
   right: 0;
 `
 
 
 export const Button = styled.button`
-  background: ${props => props.selected ? '#011f4b' : 'white'};
-  color: ${props => props.selected ? 'white' : '#011f4b'};
 
   font-size: 1.3em;
   font-weight: lighter;
   margin: 5px; /* space between buttons */
   padding: 10px 15px;
-  border: none;
+  border: 2px solid white;
+  color: white;
   border-radius: 3px;
+  background: none;
+
 
   &:hover {
     cursor: pointer;
-    background-color: #011f4b;
-    color: white;
+    background-color: white;
+    color: black;
 
     /* Fade-in animation upon hover */
     /* 3 lines to make it work on all browsers */

@@ -4,7 +4,7 @@ import { Container, Division, Header, Title, SubTitle, Details, Button, NavBar }
 class FrontPage extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <Container>
           <NavBar>
             <Button>Home</Button>
@@ -26,7 +26,7 @@ class FrontPage extends Component {
         <Container>
 
         </Container>
-      </div>
+      </Container>
     );
   }
 }

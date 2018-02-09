@@ -39,10 +39,19 @@ export const Button = styled.button`
   border: 2px solid #011f4b;
   border-radius: 3px;
 
+
   &:hover {
     cursor: pointer;
     background-color: #011f4b;
     color: white;
+
+    /* Fade-in animation upon hover */
+    /* 3 lines to make it work on all browsers */
+    -webkit-transition:background-color 0.5s linear;
+    -moz-transition:background-color 0.5s linear;
+    -o-transition:background-color 0.5s linear;
+    transition:background-color 0.5s linear;
+
   }
 
 `;

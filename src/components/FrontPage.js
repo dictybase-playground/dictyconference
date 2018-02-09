@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Division, Header, Title, SubTitle, Details, Button, NavBar } from "./Styles";
+import { Container, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown } from "./Styles";
 
 class FrontPage extends Component {
   render() {
@@ -25,6 +25,10 @@ class FrontPage extends Component {
             <Details>Egmond aan Zee</Details>
           </Header>
         </Container>
+        <center>
+          <ArrowDown />
+        </center>
+
         <Container>
 
         </Container>

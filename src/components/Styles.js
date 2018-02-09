@@ -48,6 +48,18 @@ export const NavBar = styled.div`
 
 `
 
+export const ArrowDown = styled.div`
+  position: relative;
+  bottom: 16px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+
+  border-top: 50px solid #428bca;
+
+`
+
 
 export const Button = styled.button`
 

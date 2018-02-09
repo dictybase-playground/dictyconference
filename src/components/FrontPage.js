@@ -5,7 +5,7 @@ class FrontPage extends Component {
   render() {
     return (
       <div>
-        <Container>
+        <Container top>
           <Title>
             <center>Dictyostelium International Conference</center>
           </Title>
@@ -19,6 +19,11 @@ class FrontPage extends Component {
             <Button>Abstract</Button>
             <Button>Agenda</Button>
           </center>
+        </Container>
+        <Container>
+          <Title>
+            <center>Dictyostelium International Conference</center>
+          </Title>
         </Container>
       </div>
     );

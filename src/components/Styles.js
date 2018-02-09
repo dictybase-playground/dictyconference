@@ -8,23 +8,19 @@ export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-  @media (max-width: 768px) {
-    width: 750px;
-  }
+  padding-top: ${props => props.header ? "10%" : "0px"};
 
-  @media (max-width: 992px) {
-    width: 970px;
-  }
-
-  @media (max-width: 1200px) {
-    width: 1170px;
-  }
 
 `
 export const Title = styled.p`
   font-family: sans-serif;
   font-weight: lighter;
-  font-size: 4rem;
+  font-size: 3rem;
+
+  background-image: url("http://www.s4isystems.com/wp-content/uploads/2014/11/header-background-2.jpg");
+  padding-top: 7%;
+  padding-bottom: 7%;
+
 `;
 
 

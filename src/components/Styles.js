@@ -5,15 +5,13 @@ import background from "./blue-background.jpg"
 
 export const Container = styled.div`
   color: ${props => props.dark ? 'white' : 'black'};
-  padding-bottom: 5%;
+  padding-bottom: 4%;
 `
 export const Header = styled.p`
   font-weight: lighter;
-
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
 
   color: white;
   background: linear-gradient(#011f4b, #428bca);
@@ -48,15 +46,19 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   position: fixed;
-  background-color: #011f4b;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
+  height: 61px;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
   z-index: 1;
 
 `
 
 export const ArrowDown1 = styled.div`
   position: relative;
-  bottom: 63px;
+  bottom: 64px;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;

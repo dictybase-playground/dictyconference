@@ -1,38 +1,43 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import background from "./blue-background.jpg"
 
 
 export const Container = styled.div`
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  padding-top: ${props => props.header ? "10%" : "0px"};
-
 
 `
 export const Title = styled.p`
   font-family: sans-serif;
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 4rem;
+  color: white;
 
-  background-image: url("http://www.s4isystems.com/wp-content/uploads/2014/11/header-background-2.jpg");
-  padding-top: 7%;
-  padding-bottom: 7%;
+  background-image: url(${background});
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
 
 `;
+
+export const NavBar = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+`
 
 
 export const Button = styled.button`
   background: ${props => props.selected ? '#011f4b' : 'white'};
   color: ${props => props.selected ? 'white' : '#011f4b'};
 
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: lighter;
   margin: 5px; /* space between buttons */
   padding: 10px 15px;
-  border: 2px solid #011f4b;
+  border: none;
   border-radius: 3px;
 
 

@@ -49,7 +49,7 @@ const OnePager = () => (
       </Container3>
 
 
-      <Container className="Abstract" ref={(section) => { this.Abstract = section; }}>
+      <Container dark className="Abstract" ref={(section) => { this.Abstract = section; }}>
         <Abstract />
       </Container>
 

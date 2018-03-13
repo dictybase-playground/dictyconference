@@ -7,19 +7,19 @@ export const Container = styled.div`
   padding-top: 13%;
   padding-bottom: 13%;
   width: 100%;
+  color: white;
   background-color: #011f4b;
 `
 
 export const Header = styled.p`
   font-weight: lighter;
-
-  color: white;
   background-color: #011f4b;
   text-align: center;
 
 `;
 
 export const Container2 = Container.extend`
+  color: black;
   background-color: white;
 `
 
@@ -44,8 +44,8 @@ export const SubTitle = styled.h3`
 export const Details = styled.h4`
   position: relative;
   bottom: 100px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   font-size: 1.1em;
   font-weight: lighter;
 `

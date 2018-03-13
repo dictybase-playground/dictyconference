@@ -54,36 +54,13 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
   width: 100%;
   height: 61px;
 
   padding-top: 1%;
   z-index: 1;
 
-`
-
-export const ArrowDown1 = styled.div`
-  position: relative;
-  bottom: 64px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 50px solid #428bca;
-
-`
-
-export const ArrowDown2 = ArrowDown1.extend`
-  position: relative;
-  top: 0px;
-  border-top: 50px solid white;
-`
-
-export const ArrowDown3 = ArrowDown1.extend`
-  position: relative;
-  top: 0px;
-  border-top: 50px solid #011f4b;
 `
 
 export const Button = styled.button`

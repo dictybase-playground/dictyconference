@@ -15,7 +15,7 @@ import {
   ArrowDown1,
   ArrowDown2,
   ArrowDown3
-} from "../Styles";
+} from "../OnePageStyles";
 
 const Registration = () =>
   <div>

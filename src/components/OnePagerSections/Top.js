@@ -11,7 +11,7 @@ import {
   SubTitle,
   Details,
   Button
-} from "../Styles";
+} from "../OnePageStyles";
 
 const Top = () =>
   <Header>

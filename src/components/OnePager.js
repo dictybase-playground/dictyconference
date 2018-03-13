@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import scrollToComponent from 'react-scroll-to-component';
 
-import { Container, Container2, Container3, Division, Header, Title, SubTitle, Details, Button, NavBar } from "./Styles";
+import { Container, Container2, Container3, Division, Header, Title, SubTitle, Details, Button, NavBar } from "./OnePageStyles";
 
 import Top from "./OnePagerSections/Top";
 import Venue from "./OnePagerSections/Venue";

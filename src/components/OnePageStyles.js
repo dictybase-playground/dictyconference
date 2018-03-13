@@ -4,8 +4,9 @@ import background from "./blue-background.jpg"
 
 
 export const Container = styled.div`
-  padding-top: 12%;
+  padding-top: 13%;
   padding-bottom: 13%;
+  width: 100%;
   background-color: #011f4b;
 `
 
@@ -27,24 +28,25 @@ export const Container3 = Container.extend`
 `
 
 export const Title = styled.p`
-  ${'' /* position: relative; */}
-  ${'' /* bottom: 50px; */}
+  position: relative;
+  bottom: 100px;
   font-size: 5em;
   font-weight: lighter;
 `
 
 export const SubTitle = styled.h3`
   position: relative;
-  bottom: 30px;
+  bottom: 90px;
   font-size: 2.5em;
   font-weight: lighter;
 `
 
 export const Details = styled.h4`
   position: relative;
-  bottom: 20px;
-
-  font-size: 1.2em;
+  bottom: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.1em;
   font-weight: lighter;
 `
 

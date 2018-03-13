@@ -13,8 +13,8 @@ class OnePager extends Component {
             <Button onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
             <Button onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
             <Button onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Registration</Button>
-            <Button>Abstract</Button>
-            <Button>Agenda</Button>
+            <Button onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
+            <Button onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
           </center>
         </NavBar>
         <Container>
@@ -29,9 +29,6 @@ class OnePager extends Component {
         </Container>
 
         <Container className="Venue" ref={(section) => { this.Venue = section; }}>
-          <center>
-            <ArrowDown1 />
-          </center>
 
           <center>
             <Title>Venue</Title>
@@ -42,7 +39,6 @@ class OnePager extends Component {
 
         <Container2 dark className="Travel" ref={(section) => { this.Travel = section; }}>
           <center>
-            <ArrowDown2 />
             <Container />
             <Title>Travel</Title>
             <Details>Information about venue (to be added)</Details>
@@ -51,12 +47,28 @@ class OnePager extends Component {
 
         <Container3 dark className="Registration" ref={(section) => { this.Registration = section; }}>
           <center>
-            <ArrowDown3 />
             <Container />
             <Title>Registration</Title>
             <Details>Information about registration</Details>
           </center>
         </Container3>
+
+
+        <Container className="Abstract" ref={(section) => { this.Abstract = section; }}>
+          <center>
+            <Container />
+            <Title>Abstract</Title>
+            <Details>The abstract (to be added)</Details>
+          </center>
+        </Container>
+
+        <Container2 dark className="Agenda" ref={(section) => { this.Agenda = section; }}>
+          <center>
+            <Container />
+            <Title>Agenda</Title>
+            <Details>Information about agenda (to be added)</Details>
+          </center>
+        </Container2>
 
       </div>
     );

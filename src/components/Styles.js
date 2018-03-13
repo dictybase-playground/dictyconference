@@ -7,17 +7,17 @@ export const Container = styled.div`
   position: relative;
   bottom: 55px;
   color: ${props => props.dark ? 'white' : 'black'};
+  padding-top: 7%;
   padding-bottom: 4%;
 `
 export const Header = styled.p`
   font-weight: lighter;
-  padding-top: 10%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
 
   color: white;
-  background: linear-gradient(#011f4b, #428bca);
+  background-color: #011f4b;
   text-align: center;
 
 `;

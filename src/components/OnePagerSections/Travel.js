@@ -21,6 +21,7 @@ const Travel = () =>
   <div>
     <center>
       <Title>Travel</Title>
+    </center>
       <Details>
         <p>The <b>Dictyostelium International Conference 2018</b> will take place in
         Egmond aan Zee, conveniently located about 40 kilometers from Amsterdam
@@ -35,7 +36,6 @@ const Travel = () =>
         <p>By shuttle from the hotel (about xx, €xx). Link will
         follow</p>
       </Details>
-    </center>
   </div>;
 
 export default Travel;

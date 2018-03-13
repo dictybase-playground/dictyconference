@@ -9,17 +9,17 @@ class OnePager extends Component {
       <div>
         <NavBar>
           <center>
-            <Button>Home</Button>
-            <Button>Venue</Button>
+            <Button onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1000})}>Home</Button>
+            <Button onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
             <Button onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
-            <Button>Registration</Button>
+            <Button onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Registration</Button>
             <Button>Abstract</Button>
             <Button>Agenda</Button>
           </center>
         </NavBar>
         <Container>
         </Container>
-        <Container>
+        <Container className="Home" ref={(section) => { this.Home = section; }}>
           <Header>
             <Title>Dicty 2018</Title>
             <SubTitle>Annual International Dictyostelium Conference</SubTitle>
@@ -28,7 +28,7 @@ class OnePager extends Component {
           </Header>
         </Container>
 
-        <Container className="Venue">
+        <Container className="Venue" ref={(section) => { this.Venue = section; }}>
           <center>
             <ArrowDown1 />
           </center>
@@ -49,7 +49,7 @@ class OnePager extends Component {
           </center>
         </Container2>
 
-        <Container3 dark>
+        <Container3 dark className="Registration" ref={(section) => { this.Registration = section; }}>
           <center>
             <ArrowDown3 />
             <Container />

@@ -3,7 +3,7 @@ import scrollToComponent from 'react-scroll-to-component';
 
 import { Container, Container2, Container3, Division, Header, Title, SubTitle, Details, Button, NavBar, ArrowDown1, ArrowDown2, ArrowDown3 } from "./Styles";
 
-class FrontPage extends Component {
+class OnePager extends Component {
   render() {
     return (
       <div>
@@ -63,4 +63,4 @@ class FrontPage extends Component {
   }
 }
 
-export default FrontPage;
+export default OnePager;

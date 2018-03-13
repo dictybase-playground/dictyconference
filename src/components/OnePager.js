@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import scrollToComponent from 'react-scroll-to-component';
 
-import { Container, Container2, Container3, Division, Header, Title, SubTitle, Details, Button, NavBar } from "./OnePageStyles";
+import { Container, Container2, Container3, HeaderContainer, Division, Header, Title, SubTitle, Details, Button, NavBar } from "./OnePageStyles";
 
 import Top from "./OnePagerSections/Top";
 import Venue from "./OnePagerSections/Venue";
@@ -24,12 +24,20 @@ const OnePager = () => (
       </NavBar>
 
       <Container className="Home" ref={(section) => { this.Home = section; }}>
-        <Top />
+        <Top/>
+        <center>
+          <Button onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1000})}>Home</Button>
+          <Button onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
+          <Button onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
+          <Button onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Registration</Button>
+          <Button onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
+          <Button onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
+        </center>
       </Container>
 
-      <Container className="Venue" ref={(section) => { this.Venue = section; }}>
+      <Container3 className="Venue" ref={(section) => { this.Venue = section; }}>
         <Venue />
-      </Container>
+      </Container3>
 
 
       <Container2 dark className="Travel" ref={(section) => { this.Travel = section; }}>

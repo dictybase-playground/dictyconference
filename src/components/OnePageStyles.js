@@ -4,17 +4,13 @@ import background from "./blue-background.jpg"
 
 
 export const Container = styled.div`
-  position: relative;
-  bottom: 55px;
-  color: ${props => props.dark ? 'white' : 'black'};
-  padding-top: 7%;
-  padding-bottom: 4%;
+  padding-top: 12%;
+  padding-bottom: 13%;
+  background-color: #011f4b;
 `
+
 export const Header = styled.p`
   font-weight: lighter;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
 
   color: white;
   background-color: #011f4b;
@@ -23,16 +19,16 @@ export const Header = styled.p`
 `;
 
 export const Container2 = Container.extend`
-  background-color: #011f4b;
+  background-color: white;
 `
 
 export const Container3 = Container.extend`
   background-color: #428bca;
 `
 
-export const Title = styled.h1`
-  position: relative;
-  bottom: 50px;
+export const Title = styled.p`
+  ${'' /* position: relative; */}
+  ${'' /* bottom: 50px; */}
   font-size: 5em;
   font-weight: lighter;
 `
@@ -54,9 +50,11 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   position: fixed;
-  background-color: black;
+  top: 0;
   width: 100%;
-  height: 61px;
+  overflow: hidden;
+  background-color: black;
+  height: 64px;
 
   padding-top: 1%;
   z-index: 1;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import OnePager from './components/OnePager';
+import Version2 from "./components/Version2";
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -13,11 +14,6 @@ const App = () => (
   </Router>
 );
 
-const Version2 = () => (
-  <div>
-    <h2>Hello</h2>
-  </div>
-);
 
 
 export default App;

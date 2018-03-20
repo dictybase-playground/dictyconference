@@ -31,6 +31,9 @@ const styles = theme => ({
   flex: { /* For spacing of the menubar */
     flex: 1,
   },
+  darkContainer: {
+    backgroundColor: "#011f4b",
+  },
 })
 
 
@@ -58,7 +61,7 @@ const OnePager = (props) => (
           </center>
         </Grid>
 
-        <Grid item xs={12} cclassName="Venue" ref={(section) => { this.Venue = section; }}>
+        <Grid item xs={12} className="Venue" ref={(section) => { this.Venue = section; }}>
           <Venue />
         </Grid>
 

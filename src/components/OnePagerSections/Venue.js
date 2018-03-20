@@ -3,6 +3,7 @@ import scrollToComponent from "react-scroll-to-component";
 
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
+import Paper from "material-ui/Paper";
 
 import {
   Container,
@@ -25,7 +26,11 @@ const styles = theme => ({
   container: {
     fontFamily: "roboto",
     backgroundColor: "#011f4b",
-    paddingBottom: "1%",
+    paddingTop: "7%",
+    paddingBottom: "7%",
+    paddingLeft: "6%",
+    paddingRight: "6%",
+    color: "white",
   },
   header: {
     position: "relative",
@@ -40,34 +45,35 @@ const styles = theme => ({
     paddingBottom: "1%",
     paddingLeft: "2%",
     paddingRight: "2%",
-    fontFamily: "roboto",
   },
   title: {
-    fontSize: "5rem",
+    fontSize: "4rem",
     paddingLeft: "3px",
     fontFamily: "roboto",
+    fontWeight: "lighter",
   },
-  backgroundImage: {
-    filter: "brightness(88%)"
-  }
+  info: {
+    fontSize: 18,
+    fontWeight: "lighter",
+  },
 });
 
 const Venue = (props) =>
   <div className={props.classes.container}>
     <center>
-      <Title>Venue</Title>
+      <span className={props.classes.title}>Venue</span>
     </center>
 
-      <Details>
-        <p>The <b>Dictyostelium International Conference 2018</b> will take place in
-        Egmond aan Zee, conveniently located about 40 kilometers from Amsterdam
-        International airport Schiphol.</p>
-        <p>The Hotel Zuiderduin is located close to
-        the beach, offering opportunities to swim, walk and enjoy the sunset.
-        The hotel has a <b>WELLNESS CENTER with Swimming pool, Whirlpool and
-        saunas, sport facilities for BOWLING, SQUASH COURT and FITNESS ROOM.</b></p>
-        <p>You can rent bicycles in the hotel to enjoy the village and the dunes.</p>
-      </Details>
+    <div className={props.classes.info}>
+      <p>The <b>Dictyostelium International Conference 2018</b> will take place in
+      Egmond aan Zee, conveniently located about 40 kilometers from Amsterdam
+      International airport Schiphol.</p>
+      <p>The Hotel Zuiderduin is located close to
+      the beach, offering opportunities to swim, walk and enjoy the sunset.
+      The hotel has a <b>WELLNESS CENTER with Swimming pool, Whirlpool and
+      saunas, sport facilities for BOWLING, SQUASH COURT and FITNESS ROOM.</b></p>
+      <p>You can rent bicycles in the hotel to enjoy the village and the dunes.</p>
+    </div>
   </div>;
 
 export default withStyles(styles)(Venue);

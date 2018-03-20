@@ -53,12 +53,15 @@ export const Details = styled.h4`
 export const NavBar = styled.div`
   position: fixed;
   top: 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: black;
-  height: 64px;
 
-  padding-top: 1%;
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  background-color: black;
+
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   z-index: 1;
 
 `

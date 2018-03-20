@@ -43,7 +43,7 @@ const Version2 = () =>
                 <Link to="/version2"><Button>Home</Button></Link>
               </Grid>
               <Grid item sm={2} xs={4}>
-                <Link to="/version2/venue" style={{ textDecoration: 'none' }}><Button>Venue</Button></Link>
+                <Link to="/version2/venue"><Button>Venue</Button></Link>
               </Grid>
               <Grid item sm={2} xs={4}>
                 <Link to="/version2/travel"><Button>Travel</Button></Link>

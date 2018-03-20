@@ -3,14 +3,12 @@ import scrollToComponent from "react-scroll-to-component";
 
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
-import Button from "material-ui/Button";
 
 import HeaderImage from "../Images/header_image_4.jpg";
 
 const styles = theme => ({
   container: {
     fontFamily: "roboto",
-    // backgroundColor: "black",
     color: "white",
     paddingBottom: "1%",
   },
@@ -22,15 +20,17 @@ const styles = theme => ({
     top: "30%",
     textAlign: "left",
     color: "white",
-    backgroundColor: "rgba(0,0,0, 0.5)",
+    backgroundColor: "rgba(0,0,0, 0.3)",
     paddingTop: "1%",
     paddingBottom: "1%",
     paddingLeft: "2%",
     paddingRight: "2%",
+    fontFamily: "roboto",
   },
   title: {
     fontSize: "5rem",
     paddingLeft: "3px",
+    fontFamily: "roboto",
   },
   backgroundImage: {
     filter: "brightness(88%)"

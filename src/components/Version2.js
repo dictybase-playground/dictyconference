@@ -17,18 +17,34 @@ import {
   ArrowDown3
 } from "./Version2Styles";
 
+import Grid from "material-ui/Grid";
+
 const Version2 = () =>
   <div>
     <Container>
       <img src={headerImage} width="100%" alt="Header Image" />
       <NavBar>
         <center>
-          <Button>Home</Button>
-          <Button>Venue</Button>
-          <Button>Travel</Button>
-          <Button>Registration</Button>
-          <Button>Abstract</Button>
-          <Button>Agenda</Button>
+          <Grid container spacing={8}>
+            <Grid item sm={2} xs={4}>
+              <Button>Home</Button>
+            </Grid>
+            <Grid item sm={2} xs={4}>
+              <Button>Venue</Button>
+            </Grid>
+            <Grid item sm={2} xs={4}>
+              <Button>Travel</Button>
+            </Grid>
+            <Grid item sm={2} xs={4}>
+              <Button>Registration</Button>
+            </Grid>
+            <Grid item sm={2} xs={4}>
+              <Button>Abstract</Button>
+            </Grid>
+            <Grid item sm={2} xs={4}>
+              <Button>Agenda</Button>
+            </Grid>
+          </Grid>
         </center>
       </NavBar>
       <Body>

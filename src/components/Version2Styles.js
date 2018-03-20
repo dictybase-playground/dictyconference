@@ -57,9 +57,11 @@ export const Button = styled.button`
   font-weight: lighter;
   margin: 5px; /* space between buttons */
   padding: 10px 10px;
-  border: 2px solid #011f4b;
-  color: #011f4b;
+  width: 100%;
+  ${'' /* border: 2px solid #011f4b; */}
+  ${'' /* color: #011f4b; */}
   border-radius: 3px;
+  border-style: hidden;
   background: none;
 
 

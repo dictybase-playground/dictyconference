@@ -10,6 +10,9 @@ import HeaderImage from "../Images/header_image_4.jpg";
 const styles = theme => ({
   container: {
     fontFamily: "roboto",
+    // backgroundColor: "black",
+    color: "white",
+    paddingBottom: "1%",
   },
   header: {
     position: "relative",
@@ -17,24 +20,25 @@ const styles = theme => ({
   text: {
     position: "absolute",
     top: "30%",
-    textalign: "center",
+    textAlign: "left",
     color: "white",
-  },
-  title: {
-    fontSize: "5rem",
-    paddingLeft: "1px",
     backgroundColor: "rgba(0,0,0, 0.5)",
     paddingTop: "1%",
     paddingBottom: "1%",
+    paddingLeft: "2%",
+    paddingRight: "2%",
+  },
+  title: {
+    fontSize: "5rem",
+    paddingLeft: "3px",
   },
   backgroundImage: {
-    filter: "brightness(80%)"
+    filter: "brightness(88%)"
   }
 });
 
 const Top = props =>
   <div className={props.classes.container}>
-    <center>
       <div className={props.classes.header}>
         <img
           src={HeaderImage}
@@ -44,12 +48,10 @@ const Top = props =>
 
         <div className={props.classes.text}>
             <h1 className={props.classes.title}>Dicty 2018</h1>
+            <h2>Annual International Dictyostelium Conference</h2>
+            <p>August 12 to August 16, 2018 at the Netherlands, Egmond aan Zee</p>
         </div>
       </div>
-    </center>
-    <p>Annual International Dictyostelium Conference</p>
-      <p>August 12 to August 16, 2018, The Netherlands</p>
-      <p>Egmond aan Zee</p>
   </div>;
 
 export default withStyles(styles)(Top);

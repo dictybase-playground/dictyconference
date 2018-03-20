@@ -37,9 +37,10 @@ export const SubTitle = styled.h3`
 
 export const Details = styled.h4`
   position: relative;
-  bottom: 50px;
-  padding-left: 15%;
-  padding-right: 15%;
+  bottom: 20px;
+  text-align: justify;
+  padding-left: 6%;
+  padding-right: 6%;
   font-size: 1.1em;
   font-weight: lighter;
 `

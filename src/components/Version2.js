@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
 import headerImage from "./Images/header_image_3.jpg";
+
 import HomeBody from "./Version2Components/HomeBody";
+import Venue from "./Version2Components/Venue";
+import Travel from "./Version2Components/Travel";
+import Registration from "./Version2Components/Registration";
+import Abstract from "./Version2Components/Abstract";
+import Agenda from "./Version2Components/Agenda";
 
 import {
   Container,
@@ -50,15 +56,20 @@ const Version2 = () =>
           </Grid>
         </center>
       </NavBar>
-      {/* <Router>
+
+      <Router>
         <div>
-          <Route exact path="/" component={OnePager} />
+          <Route exact path="/version2" component={HomeBody} />
           <Switch>
-            <Route path="/version2" component={Version2} />
+            <Route path="/version2/venue" component={Venue} />
+            <Route path="/version2/travel" component={Travel} />
+            <Route path="/version2/registration" component={Registration} />
+            <Route path="/version2/abstract" component={Abstract} />
+            <Route path="/version2/agenda" component={Agenda} />
           </Switch>
         </div>
-      </Router> */}
-      <HomeBody />
+      </Router>
+
     </Container>
   </div>;
 

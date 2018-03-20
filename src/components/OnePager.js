@@ -5,8 +5,11 @@ import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 
 import Button from "material-ui/Button";
+import AppBar from "material-ui/AppBar";
+import Toolbar from "material-ui/Toolbar";
+import Typography from "material-ui/Typography";
 
-import { Container, Container2, Container3, HeaderContainer, Division, Header, Title, SubTitle, Details, NavBar } from "./OnePageStyles";
+import { Container, Container2, Container3, HeaderContainer, Division, Header, Title, SubTitle, Details } from "./OnePageStyles";
 
 import Top from "./OnePagerSections/Top";
 import Venue from "./OnePagerSections/Venue";
@@ -19,29 +22,36 @@ const styles = theme => ({
   button: {
     margin: 5,
     padding: "10px 10px",
-    border: "2px solid white",
-    color: "white",
+    border: "2px solid #011f4b",
+    color: "#011f4b",
     '&:hover': {
       cursor: "pointer",
-      background: "white",
-      color: "black",
+      background: "#011f4b",
+      color: "white",
     }
-  }
+  },
+  flex: { /* For spacing of the menubar */
+    flex: 1,
+  },
 })
 
 
 const OnePager = (props) => (
     <div>
-      <NavBar>
-        <center>
+      <AppBar position="sticky" color="default">
+        <Toolbar>
+          <Typography variant="title" color="inherit" className={props.classes.flex}>
+            dicty 2018
+          </Typography>
+
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1000})}>Home</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Registration</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
-        </center>
-      </NavBar>
+        </Toolbar>
+      </AppBar>
 
       <Container className="Home" ref={(section) => {this.Home = section; }}>
         <Top/>

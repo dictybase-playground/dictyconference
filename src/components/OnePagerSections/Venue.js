@@ -1,62 +1,10 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
+import { sectionStyles as styles } from "../OnePageStyles";
 
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 import Paper from "material-ui/Paper";
-
-import {
-  Container,
-  Container2,
-  Container3,
-  Division,
-  Header,
-  Title,
-  SubTitle,
-  Details,
-  Button,
-  NavBar,
-  ArrowDown1,
-  ArrowDown2,
-  ArrowDown3
-} from "../OnePageStyles";
-
-
-const styles = theme => ({
-  container: {
-    fontFamily: "roboto",
-    backgroundColor: "#011f4b",
-    paddingTop: "7%",
-    paddingBottom: "7%",
-    paddingLeft: "6%",
-    paddingRight: "6%",
-    color: "white",
-  },
-  header: {
-    position: "relative",
-  },
-  text: {
-    position: "absolute",
-    top: "30%",
-    textAlign: "left",
-    color: "white",
-    backgroundColor: "rgba(0,0,0, 0.3)",
-    paddingTop: "1%",
-    paddingBottom: "1%",
-    paddingLeft: "2%",
-    paddingRight: "2%",
-  },
-  title: {
-    fontSize: "4rem",
-    paddingLeft: "3px",
-    fontFamily: "roboto",
-    fontWeight: "lighter",
-  },
-  info: {
-    fontSize: 18,
-    fontWeight: "lighter",
-  },
-});
 
 const Venue = (props) =>
   <div className={props.classes.container}>

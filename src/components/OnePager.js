@@ -10,8 +10,6 @@ import Toolbar from "material-ui/Toolbar";
 import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
 
-import { Container, Container2, Container3, HeaderContainer, Division, Header, Title, SubTitle, Details } from "./OnePageStyles";
-
 import Top from "./OnePagerSections/Top";
 import Venue from "./OnePagerSections/Venue";
 import Travel from "./OnePagerSections/Travel";
@@ -40,9 +38,6 @@ const styles = theme => ({
       color: "#011f4b",
     }
   },
-  leftIcon: {
-    marginRight: theme.spacing.unit,
-  },
   flex: { /* For spacing of the menubar */
     flex: 1,
   },
@@ -67,9 +62,10 @@ const OnePager = (props) => (
       </AppBar>
 
       <Grid container spacing={24}>
-        <Grid item xs={12} className="Home" ref={(section) => { this.Home = section; }}>
-          <Top/>
+        <Grid className={props.classes.darkContainer} item xs={12} className="Home" ref={(section) => { this.Home = section; }}>
           <center>
+            <Top />
+
             <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
             <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
             <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Register</Button>
@@ -81,7 +77,7 @@ const OnePager = (props) => (
         <Grid item xs={12} cclassName="Venue" ref={(section) => { this.Venue = section; }}>
           <Venue />
         </Grid>
-        
+
         <Grid item xs={12} className="Travel" ref={(section) => { this.Travel = section; }}>
           <Travel />
         </Grid>
@@ -99,8 +95,6 @@ const OnePager = (props) => (
         </Grid>
 
       </Grid>
-
-
 
     </div>
 )

@@ -35,13 +35,17 @@ export const venueStyles = theme => ({
     fontSize: 18,
     fontWeight: "lighter",
   },
+  image: {
+    paddingTop: "1%",
+    width: "100%",
+  },
 });
 
 
 export const travelStyles = theme => ({
   container: {
     fontFamily: "roboto",
-    backgroundColor: "#0b3861",
+    backgroundColor: "#428bca",
     paddingTop: "7%",
     paddingBottom: "7%",
     paddingLeft: "6%",
@@ -78,7 +82,7 @@ export const travelStyles = theme => ({
 export const registerStyles = theme => ({
   container: {
     fontFamily: "roboto",
-    backgroundColor: "#428bca",
+    backgroundColor: "#0b3861",
     paddingTop: "7%",
     paddingBottom: "7%",
     paddingLeft: "6%",
@@ -109,4 +113,11 @@ export const registerStyles = theme => ({
     fontSize: 18,
     fontWeight: "lighter",
   },
+  image: {
+    paddingTop: "1%",
+    width: "100%",
+  },
+  table: {
+    border: "1px solid white",
+  }
 });

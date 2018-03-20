@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import scrollToComponent from "react-scroll-to-component";
 import { venueStyles as styles } from "../OnePageStyles";
-
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
+
+import VenueImage1 from "../Images/venue_image_1.jpg";
 
 const Venue = (props) =>
   <div className={props.classes.container}>
     <center>
       <span className={props.classes.title}>Venue</span>
     </center>
+    <img src={VenueImage1} className={props.classes.image} />
 
     <div className={props.classes.info}>
       <p>The <b>Dictyostelium International Conference 2018</b> will take place in

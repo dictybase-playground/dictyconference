@@ -32,33 +32,35 @@ const Version2 = () =>
   <div>
     <Container>
       <img src={headerImage} width="100%" alt="Header Image" />
-      <NavBar>
-        <center>
-          <Grid container spacing={8}>
-            <Grid item sm={2} xs={4}>
-              <Button>Home</Button>
-            </Grid>
-            <Grid item sm={2} xs={4}>
-              <Button>Venue</Button>
-            </Grid>
-            <Grid item sm={2} xs={4}>
-              <Button>Travel</Button>
-            </Grid>
-            <Grid item sm={2} xs={4}>
-              <Button>Registration</Button>
-            </Grid>
-            <Grid item sm={2} xs={4}>
-              <Button>Abstract</Button>
-            </Grid>
-            <Grid item sm={2} xs={4}>
-              <Button>Agenda</Button>
-            </Grid>
-          </Grid>
-        </center>
-      </NavBar>
 
       <Router>
         <div>
+
+        <NavBar>
+          <center>
+            <Grid container spacing={8}>
+              <Grid item sm={2} xs={4}>
+                <Button><Link to="/version2/home">Home</Link></Button>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Button><Link to="/version2/venue" style={{ textDecoration: 'none' }}>Venue</Link></Button>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Button><Link to="/version2/travel">Travel</Link></Button>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Button><Link to="/version2/registration">Registration</Link></Button>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Button><Link to="/version2/abstract">Abstract</Link></Button>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Button><Link to="/version2/agenda">Agenda</Link></Button>
+              </Grid>
+            </Grid>
+          </center>
+        </NavBar>
+
           <Route exact path="/version2" component={HomeBody} />
           <Switch>
             <Route path="/version2/venue" component={Venue} />
@@ -67,7 +69,9 @@ const Version2 = () =>
             <Route path="/version2/abstract" component={Abstract} />
             <Route path="/version2/agenda" component={Agenda} />
           </Switch>
+
         </div>
+
       </Router>
 
     </Container>

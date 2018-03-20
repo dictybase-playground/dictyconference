@@ -8,6 +8,7 @@ import Button from "material-ui/Button";
 import AppBar from "material-ui/AppBar";
 import Toolbar from "material-ui/Toolbar";
 import Typography from "material-ui/Typography";
+import Grid from "material-ui/Grid";
 
 import { Container, Container2, Container3, HeaderContainer, Division, Header, Title, SubTitle, Details } from "./OnePageStyles";
 
@@ -65,39 +66,41 @@ const OnePager = (props) => (
         </Toolbar>
       </AppBar>
 
-      <Container className="Home" ref={(section) => {this.Home = section; }}>
-        <Top/>
-        <center>
-          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>
-Venue</Button>
-          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
-          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Register</Button>
-          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
-          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
-        </center>
-      </Container>
+      <Grid container spacing={24}>
+        <Grid item xs={12} className="Home" ref={(section) => { this.Home = section; }}>
+          <Top/>
+          <center>
+            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
+            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
+            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Register</Button>
+            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
+            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
+          </center>
+        </Grid>
 
-      <Container3 className="Venue" ref={(section) => { this.Venue = section; }}>
-        <Venue />
-      </Container3>
+        <Grid item xs={12} cclassName="Venue" ref={(section) => { this.Venue = section; }}>
+          <Venue />
+        </Grid>
+        
+        <Grid item xs={12} className="Travel" ref={(section) => { this.Travel = section; }}>
+          <Travel />
+        </Grid>
+
+        <Grid item xs={12} className="Registration" ref={(section) => { this.Registration = section; }}>
+          <Registration />
+        </Grid>
+
+        <Grid item xs={12} className="Abstract" ref={(section) => { this.Abstract = section; }}>
+          <Abstract />
+        </Grid>
+
+        <Grid item xs={12} className="Agenda" ref={(section) => { this.Agenda = section; }}>
+          <Agenda />
+        </Grid>
+
+      </Grid>
 
 
-      <Container2 dark className="Travel" ref={(section) => { this.Travel = section; }}>
-        <Travel />
-      </Container2>
-
-      <Container3 dark className="Registration" ref={(section) => { this.Registration = section; }}>
-        <Registration />
-      </Container3>
-
-
-      <Container dark className="Abstract" ref={(section) => { this.Abstract = section; }}>
-        <Abstract />
-      </Container>
-
-      <Container2 dark className="Agenda" ref={(section) => { this.Agenda = section; }}>
-        <Agenda />
-      </Container2>
 
     </div>
 )

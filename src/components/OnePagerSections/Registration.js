@@ -1,7 +1,6 @@
 import React from "react";
 import { registerStyles as styles } from "../OnePageStyles";
 import { withStyles } from "material-ui/styles";
-
 import HotelImage from "../Images/hotel_zuiderduin.jpg";
 
 const Registration = props =>
@@ -9,6 +8,7 @@ const Registration = props =>
     <center>
       <span className={props.classes.title}>Registration</span>
     </center>
+
     <img
       src={HotelImage}
       alt="Hotel Zuiderduin"
@@ -47,59 +47,41 @@ const Registration = props =>
         <b>Fees (Provisional Data)</b>
       </center>
       <br />
-      <center>
-        <table className={props.classes.table} width="100%">
+      <table className={props.classes.table} width="100%">
+        <tbody>
           <tr>
             <th />
             <th>Early Bird (ends April 30)</th>
             <th>Regular Rate (from May 1 to July 17)</th>
           </tr>
           <tr>
-            <td>
-              <center>Regular Attendees</center>
-            </td>
+            <td>Regular Attendees</td>
           </tr>
           <tr>
             <td>Conference fee + accomodation single room</td>
-            <td>
-              <center>750 €</center>
-            </td>
-            <td>
-              <center>750 €</center>
-            </td>
+            <td>750 €</td>
+            <td>750 €</td>
           </tr>
           <tr>
             <td>Conference fee + accomodation double room</td>
-            <td>
-              <center>650 €</center>
-            </td>
-            <td>
-              <center>650 €</center>
-            </td>
+            <td>650 €</td>
+            <td>650 €</td>
           </tr>
           <tr>
-            <center>Students</center>
+            <td>Students</td>
           </tr>
           <tr>
             <td>Conference fee + accomodation single room</td>
-            <td>
-              <center>650 €</center>
-            </td>
-            <td>
-              <center>650 €</center>
-            </td>
+            <td>650 €</td>
+            <td>650 €</td>
           </tr>
           <tr>
             <td>Conference fee + accomodation single room</td>
-            <td>
-              <center>550 €</center>
-            </td>
-            <td>
-              <center>550 €</center>
-            </td>
+            <td>550 €</td>
+            <td>550 €</td>
           </tr>
-        </table>
-      </center>
+        </tbody>
+      </table>
       <br />
       Additional nights can be booked on registration.
     </div>

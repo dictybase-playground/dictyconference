@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
-import { sectionStyles as styles } from "../OnePageStyles";
+import { venueStyles as styles } from "../OnePageStyles";
 
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
-import Paper from "material-ui/Paper";
 
 const Venue = (props) =>
   <div className={props.classes.container}>

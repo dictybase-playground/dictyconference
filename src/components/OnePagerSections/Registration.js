@@ -1,28 +1,14 @@
 import React, { Component } from "react";
-import scrollToComponent from "react-scroll-to-component";
+import { registerStyles as styles } from "../OnePageStyles";
+import PropTypes from "prop-types";
+import { withStyles } from "material-ui/styles";
 
-import {
-  Container,
-  Container2,
-  Container3,
-  Division,
-  Header,
-  Title,
-  SubTitle,
-  Details,
-  Button,
-  NavBar,
-  ArrowDown1,
-  ArrowDown2,
-  ArrowDown3
-} from "../OnePageStyles";
-
-const Registration = () =>
-  <div>
+const Registration = (props) =>
+  <div className={props.classes.container}>
     <center>
-      <Title>Registration</Title>
+      <span className={props.classes.title}>Registration</span>
     </center>
-      <Details>
+      <div className={props.classes.info}>
         <ul>
           <li><p>To register visit this link (managed by xx)</p></li>
           <li><p>After registration to
@@ -31,7 +17,7 @@ const Registration = () =>
           registration ends on April 30. Regular registration on July 17</p></li>
           <li><p>Registration fees cover: meals, attendance to sessions, coffee breaks and social activities.</p></li>
         </ul>
-      </Details>
+      </div>
   </div>;
 
-export default Registration;
+export default withStyles(styles)(Registration);

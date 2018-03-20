@@ -1,28 +1,14 @@
 import React, { Component } from "react";
-import scrollToComponent from "react-scroll-to-component";
+import { travelStyles as styles } from "../OnePageStyles";
+import PropTypes from "prop-types";
+import { withStyles } from "material-ui/styles";
 
-import {
-  Container,
-  Container2,
-  Container3,
-  Division,
-  Header,
-  Title,
-  SubTitle,
-  Details,
-  Button,
-  NavBar,
-  ArrowDown1,
-  ArrowDown2,
-  ArrowDown3
-} from "../OnePageStyles";
-
-const Travel = () =>
-  <div>
+const Travel = (props) =>
+  <div className={props.classes.container}>
     <center>
-      <Title>Travel</Title>
+      <span className={props.classes.title}>Travel</span>
     </center>
-      <Details>
+      <div className={props.classes.info}>
         <p>The <b>Dictyostelium International Conference 2018</b> will take place in
         Egmond aan Zee, conveniently located about 40 kilometers from Amsterdam
         International airport Schiphol.</p>
@@ -35,7 +21,7 @@ const Travel = () =>
         <p>By taxi (about 45 minutes, €120).</p>
         <p>By shuttle from the hotel (about xx, €xx). Link will
         follow</p>
-      </Details>
+      </div>
   </div>;
 
-export default Travel;
+export default withStyles(styles)(Travel);

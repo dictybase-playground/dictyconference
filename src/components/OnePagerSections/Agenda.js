@@ -1,28 +1,16 @@
 import React, { Component } from "react";
-import scrollToComponent from "react-scroll-to-component";
+import { travelStyles as styles } from "../OnePageStyles";
+import PropTypes from "prop-types";
+import { withStyles } from "material-ui/styles";
 
-import {
-  Container,
-  Container2,
-  Container3,
-  Division,
-  Header,
-  Title,
-  SubTitle,
-  Details,
-  Button,
-  NavBar,
-  ArrowDown1,
-  ArrowDown2,
-  ArrowDown3
-} from "../OnePageStyles";
+const Agenda = (props) =>
+<div className={props.classes.container}>
+  <center>
+    <span className={props.classes.title}>Agenda</span>
+  </center>
+    <div className={props.classes.info}>
+      <p>Insert agenda here when it is given.</p>
+    </div>
+</div>;
 
-const Agenda = () =>
-  <div>
-    <center>
-      <Title>Agenda</Title>
-      <Details>Insert agenda here</Details>
-    </center>
-  </div>;
-
-export default Agenda;
+export default withStyles(styles)(Agenda);

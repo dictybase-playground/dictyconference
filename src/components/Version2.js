@@ -1,13 +1,11 @@
 import React from "react";
 import headerImage from "./Images/header_image_3.jpg";
-
 import HomeBody from "./Version2Components/HomeBody";
 import Venue from "./Version2Components/Venue";
 import Travel from "./Version2Components/Travel";
 import Registration from "./Version2Components/Registration";
 import Abstract from "./Version2Components/Abstract";
 import Agenda from "./Version2Components/Agenda";
-
 import { Container, Button, NavBar } from "./Version2Styles";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 

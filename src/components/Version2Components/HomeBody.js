@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Body, Title, SubTitle, Details } from "../Version2Styles";
 
 const HomeBody = () =>

@@ -16,11 +16,11 @@ const Travel = props =>
       <p>
         By Public Transportation (about 1:20 hours, €12). Follow the link and
         fill in the date and time of travel:
-        <p>
-          <a>
-            https://9292.nl/en/journeyadvice/station-schiphol-airport/egmond-aan-zee_1931vl/departure
-          </a>
-        </p>
+      </p>
+      <p>
+        <a>
+          https://9292.nl/en/journeyadvice/station-schiphol-airport/egmond-aan-zee_1931vl/departure
+        </a>
       </p>
       In the airport take the train to Castricum (switch trains in Amsterdam
       Sloterdijk) and take the bus to 1931vl Egmonds aan Zee

@@ -40,22 +40,22 @@ const Version2 = () =>
           <center>
             <Grid container spacing={8}>
               <Grid item sm={2} xs={4}>
-                <Button><Link to="/version2/home">Home</Link></Button>
+                <Link to="/version2"><Button>Home</Button></Link>
               </Grid>
               <Grid item sm={2} xs={4}>
-                <Button><Link to="/version2/venue" style={{ textDecoration: 'none' }}>Venue</Link></Button>
+                <Link to="/version2/venue" style={{ textDecoration: 'none' }}><Button>Venue</Button></Link>
               </Grid>
               <Grid item sm={2} xs={4}>
-                <Button><Link to="/version2/travel">Travel</Link></Button>
+                <Link to="/version2/travel"><Button>Travel</Button></Link>
               </Grid>
               <Grid item sm={2} xs={4}>
-                <Button><Link to="/version2/registration">Registration</Link></Button>
+                <Link to="/version2/registration"><Button>Registration</Button></Link>
               </Grid>
               <Grid item sm={2} xs={4}>
-                <Button><Link to="/version2/abstract">Abstract</Link></Button>
+                <Link to="/version2/abstract"><Button>Abstract</Button></Link>
               </Grid>
               <Grid item sm={2} xs={4}>
-                <Button><Link to="/version2/agenda">Agenda</Link></Button>
+                <Link to="/version2/agenda"><Button>Agenda</Button></Link>
               </Grid>
             </Grid>
           </center>

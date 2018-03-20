@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import OnePager from './components/OnePager';
+import React from "react";
+import OnePager from "./components/OnePager";
 import Version2 from "./components/Version2";
-import './App.css';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-require('typeface-roboto');
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+require("typeface-roboto");
 
-const App = () => (
+const App = () =>
   <Router>
     <div>
       <Route exact path="/" component={OnePager} />
@@ -14,7 +14,6 @@ const App = () => (
         <Route path="/version2" component={Version2} />
       </Switch>
     </div>
-  </Router>
-);
+  </Router>;
 
 export default App;

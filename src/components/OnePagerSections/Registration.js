@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { registerStyles as styles } from "../OnePageStyles";
-import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 
 import HotelImage from "../Images/hotel_zuiderduin.jpg";
@@ -10,7 +9,11 @@ const Registration = props =>
     <center>
       <span className={props.classes.title}>Registration</span>
     </center>
-    <img src={HotelImage} className={props.classes.image} />
+    <img
+      src={HotelImage}
+      alt="Hotel Zuiderduin"
+      className={props.classes.image}
+    />
     <div className={props.classes.info}>
       <br />
       <center>
@@ -45,40 +48,58 @@ const Registration = props =>
       </center>
       <br />
       <center>
-      <table className={props.classes.table} width="100%">
-        <tr>
-          <th></th>
-          <th>Early Bird (ends April 30)</th>
-          <th>Regular Rate (from May 1 to July 17)</th>
-        </tr>
-        <tr>
-          <td><center>Regular Attendees</center></td>
-        </tr>
-        <tr>
-          <td>Conference fee + accomodation single room</td>
-          <td><center>750 €</center></td>
-          <td><center>750 €</center></td>
-        </tr>
-        <tr>
-          <td>Conference fee + accomodation double room</td>
-          <td><center>650 €</center></td>
-          <td><center>650 €</center></td>
-        </tr>
-        <tr>
-          <center>Students</center>
-        </tr>
-        <tr>
-          <td>Conference fee + accomodation single room</td>
-          <td><center>650 €</center></td>
-          <td><center>650 €</center></td>
-        </tr>
-        <tr>
-          <td>Conference fee + accomodation single room</td>
-          <td><center>550 €</center></td>
-          <td><center>550 €</center></td>
-        </tr>
-      </table>
-    </center>
+        <table className={props.classes.table} width="100%">
+          <tr>
+            <th />
+            <th>Early Bird (ends April 30)</th>
+            <th>Regular Rate (from May 1 to July 17)</th>
+          </tr>
+          <tr>
+            <td>
+              <center>Regular Attendees</center>
+            </td>
+          </tr>
+          <tr>
+            <td>Conference fee + accomodation single room</td>
+            <td>
+              <center>750 €</center>
+            </td>
+            <td>
+              <center>750 €</center>
+            </td>
+          </tr>
+          <tr>
+            <td>Conference fee + accomodation double room</td>
+            <td>
+              <center>650 €</center>
+            </td>
+            <td>
+              <center>650 €</center>
+            </td>
+          </tr>
+          <tr>
+            <center>Students</center>
+          </tr>
+          <tr>
+            <td>Conference fee + accomodation single room</td>
+            <td>
+              <center>650 €</center>
+            </td>
+            <td>
+              <center>650 €</center>
+            </td>
+          </tr>
+          <tr>
+            <td>Conference fee + accomodation single room</td>
+            <td>
+              <center>550 €</center>
+            </td>
+            <td>
+              <center>550 €</center>
+            </td>
+          </tr>
+        </table>
+      </center>
       <br />
       Additional nights can be booked on registration.
     </div>

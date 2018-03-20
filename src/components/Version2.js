@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import scrollToComponent from "react-scroll-to-component";
+import React from "react";
 import headerImage from "./Images/header_image_3.jpg";
 
 import HomeBody from "./Version2Components/HomeBody";
@@ -9,57 +8,54 @@ import Registration from "./Version2Components/Registration";
 import Abstract from "./Version2Components/Abstract";
 import Agenda from "./Version2Components/Agenda";
 
-import {
-  Container,
-  Body,
-  Division,
-  Header,
-  Title,
-  SubTitle,
-  Details,
-  Button,
-  NavBar,
-  ArrowDown1,
-  ArrowDown2,
-  ArrowDown3
-} from "./Version2Styles";
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-
+import { Container, Button, NavBar } from "./Version2Styles";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import Grid from "material-ui/Grid";
 
 const Version2 = () =>
   <div>
     <Container>
-      <img src={headerImage} width="100%" alt="Header Image" />
+      <img src={headerImage} width="100%" alt="Header background" />
 
       <Router>
         <div>
-
-        <NavBar>
-          <center>
-            <Grid container spacing={8}>
-              <Grid item sm={2} xs={4}>
-                <Link to="/version2"><Button>Home</Button></Link>
+          <NavBar>
+            <center>
+              <Grid container spacing={8}>
+                <Grid item sm={2} xs={4}>
+                  <Link to="/version2">
+                    <Button>Home</Button>
+                  </Link>
+                </Grid>
+                <Grid item sm={2} xs={4}>
+                  <Link to="/version2/venue">
+                    <Button>Venue</Button>
+                  </Link>
+                </Grid>
+                <Grid item sm={2} xs={4}>
+                  <Link to="/version2/travel">
+                    <Button>Travel</Button>
+                  </Link>
+                </Grid>
+                <Grid item sm={2} xs={4}>
+                  <Link to="/version2/registration">
+                    <Button>Registration</Button>
+                  </Link>
+                </Grid>
+                <Grid item sm={2} xs={4}>
+                  <Link to="/version2/abstract">
+                    <Button>Abstract</Button>
+                  </Link>
+                </Grid>
+                <Grid item sm={2} xs={4}>
+                  <Link to="/version2/agenda">
+                    <Button>Agenda</Button>
+                  </Link>
+                </Grid>
               </Grid>
-              <Grid item sm={2} xs={4}>
-                <Link to="/version2/venue"><Button>Venue</Button></Link>
-              </Grid>
-              <Grid item sm={2} xs={4}>
-                <Link to="/version2/travel"><Button>Travel</Button></Link>
-              </Grid>
-              <Grid item sm={2} xs={4}>
-                <Link to="/version2/registration"><Button>Registration</Button></Link>
-              </Grid>
-              <Grid item sm={2} xs={4}>
-                <Link to="/version2/abstract"><Button>Abstract</Button></Link>
-              </Grid>
-              <Grid item sm={2} xs={4}>
-                <Link to="/version2/agenda"><Button>Agenda</Button></Link>
-              </Grid>
-            </Grid>
-          </center>
-        </NavBar>
+            </center>
+          </NavBar>
 
           <Route exact path="/version2" component={HomeBody} />
           <Switch>
@@ -69,11 +65,8 @@ const Version2 = () =>
             <Route path="/version2/abstract" component={Abstract} />
             <Route path="/version2/agenda" component={Agenda} />
           </Switch>
-
         </div>
-
       </Router>
-
     </Container>
   </div>;
 

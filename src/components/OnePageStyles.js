@@ -1,6 +1,3 @@
-import React, { Component } from 'react';
-import styled from "styled-components";
-
 export const venueStyles = theme => ({
   container: {
     fontFamily: "roboto",
@@ -9,10 +6,10 @@ export const venueStyles = theme => ({
     paddingBottom: "7%",
     paddingLeft: "6%",
     paddingRight: "6%",
-    color: "white",
+    color: "white"
   },
   header: {
-    position: "relative",
+    position: "relative"
   },
   text: {
     position: "absolute",
@@ -23,24 +20,23 @@ export const venueStyles = theme => ({
     paddingTop: "1%",
     paddingBottom: "1%",
     paddingLeft: "2%",
-    paddingRight: "2%",
+    paddingRight: "2%"
   },
   title: {
     fontSize: "4rem",
     paddingLeft: "3px",
     fontFamily: "roboto",
-    fontWeight: "lighter",
+    fontWeight: "lighter"
   },
   info: {
     fontSize: 18,
-    fontWeight: "lighter",
+    fontWeight: "lighter"
   },
   image: {
     paddingTop: "1%",
-    width: "100%",
-  },
+    width: "100%"
+  }
 });
-
 
 export const travelStyles = theme => ({
   container: {
@@ -50,10 +46,10 @@ export const travelStyles = theme => ({
     paddingBottom: "7%",
     paddingLeft: "6%",
     paddingRight: "6%",
-    color: "white",
+    color: "white"
   },
   header: {
-    position: "relative",
+    position: "relative"
   },
   text: {
     position: "absolute",
@@ -64,20 +60,19 @@ export const travelStyles = theme => ({
     paddingTop: "1%",
     paddingBottom: "1%",
     paddingLeft: "2%",
-    paddingRight: "2%",
+    paddingRight: "2%"
   },
   title: {
     fontSize: "4rem",
     paddingLeft: "3px",
     fontFamily: "roboto",
-    fontWeight: "lighter",
+    fontWeight: "lighter"
   },
   info: {
     fontSize: 18,
-    fontWeight: "lighter",
-  },
+    fontWeight: "lighter"
+  }
 });
-
 
 export const registerStyles = theme => ({
   container: {
@@ -87,10 +82,10 @@ export const registerStyles = theme => ({
     paddingBottom: "7%",
     paddingLeft: "6%",
     paddingRight: "6%",
-    color: "white",
+    color: "white"
   },
   header: {
-    position: "relative",
+    position: "relative"
   },
   text: {
     position: "absolute",
@@ -101,23 +96,23 @@ export const registerStyles = theme => ({
     paddingTop: "1%",
     paddingBottom: "1%",
     paddingLeft: "2%",
-    paddingRight: "2%",
+    paddingRight: "2%"
   },
   title: {
     fontSize: "4rem",
     paddingLeft: "3px",
     fontFamily: "roboto",
-    fontWeight: "lighter",
+    fontWeight: "lighter"
   },
   info: {
     fontSize: 18,
-    fontWeight: "lighter",
+    fontWeight: "lighter"
   },
   image: {
     paddingTop: "1%",
-    width: "100%",
+    width: "100%"
   },
   table: {
-    border: "1px solid white",
+    border: "1px solid white"
   }
 });

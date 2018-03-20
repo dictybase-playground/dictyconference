@@ -4,15 +4,15 @@ import background from "./blue-background.jpg"
 
 
 export const Container = styled.div`
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   color: white;
 
 `
 
-export const Header = styled.p`
+export const Body = styled.p`
   font-weight: lighter;
   background-color: #011f4b;
   text-align: center;
@@ -44,7 +44,6 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   width: 100%;
-  overflow: hidden;
   height: 64px;
   z-index: 1;
 

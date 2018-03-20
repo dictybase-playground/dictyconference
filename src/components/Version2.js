@@ -4,8 +4,7 @@ import headerImage from "./Images/header_image_3.jpg";
 
 import {
   Container,
-  Container2,
-  Container3,
+  Body,
   Division,
   Header,
   Title,
@@ -24,20 +23,20 @@ const Version2 = () =>
       <img src={headerImage} width="100%" alt="Header Image" />
       <NavBar>
         <center>
-          <Button onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1000})}>Home</Button>
-          <Button onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
-          <Button onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
-          <Button onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Registration</Button>
-          <Button onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
-          <Button onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
+          <Button>Home</Button>
+          <Button>Venue</Button>
+          <Button>Travel</Button>
+          <Button>Registration</Button>
+          <Button>Abstract</Button>
+          <Button>Agenda</Button>
         </center>
       </NavBar>
-      <Header>
+      <Body>
         <Title>Dicty 2018</Title>
         <SubTitle>Annual International Dictyostelium Conference</SubTitle>
         <Details>August 12 to August 16, 2018, The Netherlands</Details>
         <Details>Egmond aan Zee</Details>
-      </Header>
+      </Body>
     </Container>
   </div>;
 

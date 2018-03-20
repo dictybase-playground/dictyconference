@@ -9,13 +9,16 @@ import HeaderImage from "../Images/header_image_4.jpg";
 
 const styles = theme => ({
   container: {
+    fontFamily: "roboto",
+  },
+  header: {
     position: "relative",
   },
   text: {
     position: "absolute",
     top: "30%",
     textalign: "center",
-    color: "white"
+    color: "white",
   },
   title: {
     fontSize: "5rem",
@@ -30,9 +33,9 @@ const styles = theme => ({
 });
 
 const Top = props =>
-  <div>
+  <div className={props.classes.container}>
     <center>
-      <div className={props.classes.container}>
+      <div className={props.classes.header}>
         <img
           src={HeaderImage}
           className={props.classes.backgroundImage}

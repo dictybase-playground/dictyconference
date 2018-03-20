@@ -28,16 +28,6 @@ const styles = theme => ({
       color: "white",
     }
   },
-  button2: {
-    margin: 5,
-    border: "2px solid white",
-    color: "white",
-    '&:hover': {
-      cursor: "pointer",
-      background: "white",
-      color: "#011f4b",
-    }
-  },
   flex: { /* For spacing of the menubar */
     flex: 1,
   },
@@ -65,12 +55,6 @@ const OnePager = (props) => (
         <Grid className={props.classes.darkContainer} item xs={12} className="Home" ref={(section) => { this.Home = section; }}>
           <center>
             <Top />
-
-            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
-            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
-            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Register</Button>
-            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
-            <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
           </center>
         </Grid>
 

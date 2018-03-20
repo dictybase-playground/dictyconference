@@ -3,6 +3,7 @@ import OnePager from './components/OnePager';
 import Version2 from "./components/Version2";
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+require('typeface-roboto');
 
 
 const App = () => (

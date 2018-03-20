@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
 import headerImage from "./Images/header_image_3.jpg";
+import HomeBody from "./Version2Components/HomeBody";
 
 import {
   Container,
@@ -16,6 +17,8 @@ import {
   ArrowDown2,
   ArrowDown3
 } from "./Version2Styles";
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+
 
 import Grid from "material-ui/Grid";
 
@@ -47,12 +50,15 @@ const Version2 = () =>
           </Grid>
         </center>
       </NavBar>
-      <Body>
-        <Title>Dicty 2018</Title>
-        <SubTitle>Annual International Dictyostelium Conference</SubTitle>
-        <Details>August 12 to August 16, 2018, The Netherlands</Details>
-        <Details>Egmond aan Zee</Details>
-      </Body>
+      {/* <Router>
+        <div>
+          <Route exact path="/" component={OnePager} />
+          <Switch>
+            <Route path="/version2" component={Version2} />
+          </Switch>
+        </div>
+      </Router> */}
+      <HomeBody />
     </Container>
   </div>;
 

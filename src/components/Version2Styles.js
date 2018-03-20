@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  color: white;
+  color: black;
 
 `
 
@@ -46,21 +46,21 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   width: 100%;
-  padding-bottom: 0.4%;
+  padding-bottom: 1.5%;
+  background-color: rgb(1, 31, 75, 0.1);
   z-index: 1;
 
 `
 
 export const Button = styled.button`
-
   font-size: 1em;
   font-weight: lighter;
   margin: 5px; /* space between buttons */
-  padding: 10px 10px;
+  padding: 10px 10px 10px 10px;
   width: 100%;
+  height: 100%;
   ${'' /* border: 2px solid #011f4b; */}
   ${'' /* color: #011f4b; */}
-  border-radius: 3px;
   border-style: hidden;
   background: none;
 

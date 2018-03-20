@@ -12,11 +12,13 @@ export const Container = styled.div`
 
 `
 
-export const Body = styled.p`
+export const Body = styled.div`
   font-weight: lighter;
-  background-color: #011f4b;
+  border-style: solid;
+  border-color: #011f4b;
+  border-width: 2px;
+  ${'' /* background-color: #011f4b; */}
   text-align: center;
-
 `;
 
 export const Title = styled.p`
@@ -44,7 +46,7 @@ export const Details = styled.h4`
 
 export const NavBar = styled.div`
   width: 100%;
-  height: 64px;
+  padding-bottom: 0.4%;
   z-index: 1;
 
 `
@@ -55,8 +57,8 @@ export const Button = styled.button`
   font-weight: lighter;
   margin: 5px; /* space between buttons */
   padding: 10px 10px;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid #011f4b;
+  color: #011f4b;
   border-radius: 3px;
   background: none;
 
@@ -68,10 +70,10 @@ export const Button = styled.button`
 
     /* Fade-in animation upon hover */
     /* 3 lines to make it work on all browsers */
-    -webkit-transition:background-color 0.5s linear;
-    -moz-transition:background-color 0.5s linear;
-    -o-transition:background-color 0.5s linear;
-    transition:background-color 0.5s linear;
+    -webkit-transition:background-color 0.4s linear;
+    -moz-transition:background-color 0.4s linear;
+    -o-transition:background-color 0.4s linear;
+    transition:background-color 0.4s linear;
 
   }
 

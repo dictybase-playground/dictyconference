@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
 
+import PropTypes from "prop-types";
+import { withStyles } from "material-ui/styles";
+
 import {
   Container,
   Container2,
@@ -17,8 +20,40 @@ import {
   ArrowDown3
 } from "../OnePageStyles";
 
-const Venue = () =>
-  <div>
+
+const styles = theme => ({
+  container: {
+    fontFamily: "roboto",
+    backgroundColor: "#011f4b",
+    paddingBottom: "1%",
+  },
+  header: {
+    position: "relative",
+  },
+  text: {
+    position: "absolute",
+    top: "30%",
+    textAlign: "left",
+    color: "white",
+    backgroundColor: "rgba(0,0,0, 0.3)",
+    paddingTop: "1%",
+    paddingBottom: "1%",
+    paddingLeft: "2%",
+    paddingRight: "2%",
+    fontFamily: "roboto",
+  },
+  title: {
+    fontSize: "5rem",
+    paddingLeft: "3px",
+    fontFamily: "roboto",
+  },
+  backgroundImage: {
+    filter: "brightness(88%)"
+  }
+});
+
+const Venue = (props) =>
+  <div className={props.classes.container}>
     <center>
       <Title>Venue</Title>
     </center>
@@ -35,4 +70,4 @@ const Venue = () =>
       </Details>
   </div>;
 
-export default Venue;
+export default withStyles(styles)(Venue);

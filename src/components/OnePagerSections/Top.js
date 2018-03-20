@@ -26,6 +26,7 @@ const styles = theme => ({
     paddingLeft: "2%",
     paddingRight: "2%",
     fontFamily: "roboto",
+    fontWeight: "lighter",
   },
   title: {
     fontSize: "5rem",

@@ -21,7 +21,6 @@ import Agenda from "./OnePagerSections/Agenda";
 const styles = theme => ({
   button: {
     margin: 5,
-    padding: "10px 10px",
     border: "2px solid #011f4b",
     color: "#011f4b",
     '&:hover': {
@@ -29,6 +28,19 @@ const styles = theme => ({
       background: "#011f4b",
       color: "white",
     }
+  },
+  button2: {
+    margin: 5,
+    border: "2px solid white",
+    color: "white",
+    '&:hover': {
+      cursor: "pointer",
+      background: "white",
+      color: "#011f4b",
+    }
+  },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
   },
   flex: { /* For spacing of the menubar */
     flex: 1,
@@ -47,7 +59,7 @@ const OnePager = (props) => (
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1000})}>Home</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
-          <Button className={props.classes.button} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Registration</Button>
+          <Button className={props.classes.button} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Register</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
           <Button className={props.classes.button} onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
         </Toolbar>
@@ -56,11 +68,12 @@ const OnePager = (props) => (
       <Container className="Home" ref={(section) => {this.Home = section; }}>
         <Top/>
         <center>
-          <Button onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>Venue</Button>
-          <Button onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
-          <Button onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Registration</Button>
-          <Button onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
-          <Button onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
+          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Venue, { offset: 0, align: 'top', duration: 1000})}>
+Venue</Button>
+          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Travel, { offset: 0, align: 'top', duration: 1500})}>Travel</Button>
+          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Registration, { offset: 0, align: 'top', duration: 1500})}>Register</Button>
+          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Abstract, { offset: 0, align: 'top', duration: 1500})}>Abstract</Button>
+          <Button className={props.classes.button2} onClick={() => scrollToComponent(this.Agenda, { offset: 0, align: 'top', duration: 1500})}>Agenda</Button>
         </center>
       </Container>
 

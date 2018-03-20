@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
 
+import PropTypes from "prop-types";
+import { withStyles } from "material-ui/styles";
+import Button from "material-ui/Button";
+
 import {
   Container,
   Container2,
@@ -9,9 +13,22 @@ import {
   Header,
   Title,
   SubTitle,
-  Details,
-  Button
+  Details
 } from "../OnePageStyles";
+
+const styles = theme => ({
+  button: {
+    margin: 5,
+    padding: "10px 10px",
+    border: "2px solid #011f4b",
+    color: "#011f4b",
+    '&:hover': {
+      cursor: "pointer",
+      background: "#011f4b",
+      color: "white",
+    }
+  },
+})
 
 const Top = () =>
   <Header>

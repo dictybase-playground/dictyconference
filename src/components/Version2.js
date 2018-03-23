@@ -10,6 +10,9 @@ import Agenda from "./Version2Components/Agenda";
 import { withStyles } from "material-ui/styles";
 import Button from "material-ui/Button";
 
+import AppBar from "material-ui/AppBar";
+import Toolbar from "material-ui/Toolbar";
+
 import { Container, NavBar } from "./Version2Styles";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
@@ -39,8 +42,8 @@ const Version2 = props =>
 
       <Router>
         <div>
-          <NavBar>
-            <center>
+          <AppBar position="static" color="default">
+            <Toolbar>
               <Grid container spacing={8}>
                 <Grid item sm={2} xs={4}>
                   <Link to="/version2" className={props.classes.link}>
@@ -62,9 +65,7 @@ const Version2 = props =>
                     to="/version2/registration"
                     className={props.classes.link}
                   >
-                    <Button className={props.classes.button}>
-                      Registration
-                    </Button>
+                    <Button className={props.classes.button}>Register</Button>
                   </Link>
                 </Grid>
                 <Grid item sm={2} xs={4}>
@@ -78,8 +79,8 @@ const Version2 = props =>
                   </Link>
                 </Grid>
               </Grid>
-            </center>
-          </NavBar>
+            </Toolbar>
+          </AppBar>
 
           <Route exact path="/version2" component={HomeBody} />
           <Switch>

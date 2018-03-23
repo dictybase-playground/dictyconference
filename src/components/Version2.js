@@ -13,7 +13,6 @@ import Button from "material-ui/Button";
 import AppBar from "material-ui/AppBar";
 import Toolbar from "material-ui/Toolbar";
 
-import { Container, NavBar } from "./Version2Styles";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import Grid from "material-ui/Grid";
@@ -37,62 +36,60 @@ const styles = theme => ({
 
 const Version2 = props =>
   <div>
-    <Container>
-      <img src={headerImage} width="100%" alt="Header background" />
+    <img src={headerImage} width="100%" alt="Header background" />
 
-      <Router>
-        <div>
-          <AppBar position="static" color="default">
-            <Toolbar>
-              <Grid container spacing={8}>
-                <Grid item sm={2} xs={4}>
-                  <Link to="/version2" className={props.classes.link}>
-                    <Button className={props.classes.button}>Home</Button>
-                  </Link>
-                </Grid>
-                <Grid item sm={2} xs={4}>
-                  <Link to="/version2/venue" className={props.classes.link}>
-                    <Button className={props.classes.button}>Venue</Button>
-                  </Link>
-                </Grid>
-                <Grid item sm={2} xs={4}>
-                  <Link to="/version2/travel" className={props.classes.link}>
-                    <Button className={props.classes.button}>Travel</Button>
-                  </Link>
-                </Grid>
-                <Grid item sm={2} xs={4}>
-                  <Link
-                    to="/version2/registration"
-                    className={props.classes.link}
-                  >
-                    <Button className={props.classes.button}>Register</Button>
-                  </Link>
-                </Grid>
-                <Grid item sm={2} xs={4}>
-                  <Link to="/version2/abstract" className={props.classes.link}>
-                    <Button className={props.classes.button}>Abstract</Button>
-                  </Link>
-                </Grid>
-                <Grid item sm={2} xs={4}>
-                  <Link to="/version2/agenda" className={props.classes.link}>
-                    <Button className={props.classes.button}>Agenda</Button>
-                  </Link>
-                </Grid>
+    <Router>
+      <div>
+        <AppBar position="static" color="default">
+          <Toolbar>
+            <Grid container spacing={8}>
+              <Grid item sm={2} xs={4}>
+                <Link to="/version2" className={props.classes.link}>
+                  <Button className={props.classes.button}>Home</Button>
+                </Link>
               </Grid>
-            </Toolbar>
-          </AppBar>
+              <Grid item sm={2} xs={4}>
+                <Link to="/version2/venue" className={props.classes.link}>
+                  <Button className={props.classes.button}>Venue</Button>
+                </Link>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Link to="/version2/travel" className={props.classes.link}>
+                  <Button className={props.classes.button}>Travel</Button>
+                </Link>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Link
+                  to="/version2/registration"
+                  className={props.classes.link}
+                >
+                  <Button className={props.classes.button}>Register</Button>
+                </Link>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Link to="/version2/abstract" className={props.classes.link}>
+                  <Button className={props.classes.button}>Abstract</Button>
+                </Link>
+              </Grid>
+              <Grid item sm={2} xs={4}>
+                <Link to="/version2/agenda" className={props.classes.link}>
+                  <Button className={props.classes.button}>Agenda</Button>
+                </Link>
+              </Grid>
+            </Grid>
+          </Toolbar>
+        </AppBar>
 
-          <Route exact path="/version2" component={HomeBody} />
-          <Switch>
-            <Route path="/version2/venue" component={Venue} />
-            <Route path="/version2/travel" component={Travel} />
-            <Route path="/version2/registration" component={Registration} />
-            <Route path="/version2/abstract" component={Abstract} />
-            <Route path="/version2/agenda" component={Agenda} />
-          </Switch>
-        </div>
-      </Router>
-    </Container>
+        <Route exact path="/version2" component={HomeBody} />
+        <Switch>
+          <Route path="/version2/venue" component={Venue} />
+          <Route path="/version2/travel" component={Travel} />
+          <Route path="/version2/registration" component={Registration} />
+          <Route path="/version2/abstract" component={Abstract} />
+          <Route path="/version2/agenda" component={Agenda} />
+        </Switch>
+      </div>
+    </Router>
   </div>;
 
 export default withStyles(styles)(Version2);

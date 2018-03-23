@@ -45,9 +45,15 @@ const Top = props =>
       />
 
       <div className={props.classes.text}>
-        <h1 className={props.classes.title}>Dicty 2018</h1>
-        <h2>Annual International Dictyostelium Conference</h2>
-        <p>August 12 to August 16, 2018 at the Netherlands, Egmond aan Zee</p>
+        <center>
+          <h1 className={props.classes.title}>Dicty 2018</h1>
+          <h2>Annual International Dictyostelium Conference</h2>
+          <p>
+            <b>August 12 to August 16, 2018</b> at the Netherlands, Egmond aan
+            Zee
+          </p>
+          <p>Organized by Arjan Kortholt and Peter van Haastert</p>
+        </center>
       </div>
     </div>
   </div>;

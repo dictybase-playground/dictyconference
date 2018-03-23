@@ -6,12 +6,33 @@ import Travel from "./Version2Components/Travel";
 import Registration from "./Version2Components/Registration";
 import Abstract from "./Version2Components/Abstract";
 import Agenda from "./Version2Components/Agenda";
-import { Container, Button, NavBar } from "./Version2Styles";
+
+import { withStyles } from "material-ui/styles";
+import Button from "material-ui/Button";
+
+import { Container, NavBar } from "./Version2Styles";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import Grid from "material-ui/Grid";
 
-const Version2 = () =>
+const styles = theme => ({
+  button: {
+    margin: 5,
+    border: "2px solid #011f4b",
+    color: "#011f4b",
+    "&:hover": {
+      cursor: "pointer",
+      background: "#011f4b",
+      color: "white"
+    }
+  },
+  link: {
+    /* Get rid of stubborn underline on clicked links */
+    textDecoration: "none"
+  }
+});
+
+const Version2 = props =>
   <div>
     <Container>
       <img src={headerImage} width="100%" alt="Header background" />
@@ -22,33 +43,38 @@ const Version2 = () =>
             <center>
               <Grid container spacing={8}>
                 <Grid item sm={2} xs={4}>
-                  <Link to="/version2">
-                    <Button>Home</Button>
+                  <Link to="/version2" className={props.classes.link}>
+                    <Button className={props.classes.button}>Home</Button>
                   </Link>
                 </Grid>
                 <Grid item sm={2} xs={4}>
-                  <Link to="/version2/venue">
-                    <Button>Venue</Button>
+                  <Link to="/version2/venue" className={props.classes.link}>
+                    <Button className={props.classes.button}>Venue</Button>
                   </Link>
                 </Grid>
                 <Grid item sm={2} xs={4}>
-                  <Link to="/version2/travel">
-                    <Button>Travel</Button>
+                  <Link to="/version2/travel" className={props.classes.link}>
+                    <Button className={props.classes.button}>Travel</Button>
                   </Link>
                 </Grid>
                 <Grid item sm={2} xs={4}>
-                  <Link to="/version2/registration">
-                    <Button>Registration</Button>
+                  <Link
+                    to="/version2/registration"
+                    className={props.classes.link}
+                  >
+                    <Button className={props.classes.button}>
+                      Registration
+                    </Button>
                   </Link>
                 </Grid>
                 <Grid item sm={2} xs={4}>
-                  <Link to="/version2/abstract">
-                    <Button>Abstract</Button>
+                  <Link to="/version2/abstract" className={props.classes.link}>
+                    <Button className={props.classes.button}>Abstract</Button>
                   </Link>
                 </Grid>
                 <Grid item sm={2} xs={4}>
-                  <Link to="/version2/agenda">
-                    <Button>Agenda</Button>
+                  <Link to="/version2/agenda" className={props.classes.link}>
+                    <Button className={props.classes.button}>Agenda</Button>
                   </Link>
                 </Grid>
               </Grid>
@@ -68,4 +94,4 @@ const Version2 = () =>
     </Container>
   </div>;
 
-export default Version2;
+export default withStyles(styles)(Version2);

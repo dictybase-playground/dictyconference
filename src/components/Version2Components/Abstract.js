@@ -1,12 +1,16 @@
 import React from "react";
-import { Body, Title, Details } from "../Version2Styles";
+import { textStyles as styles } from "../Version2Styles";
+import { withStyles } from "material-ui/styles";
 
-const Abstract = () =>
-  <div>
-    <Body>
-      <Title>Abstract</Title>
-      <Details>Abstract to be added soon.</Details>
-    </Body>
+const Abstract = props =>
+  <div className={props.classes.container}>
+    <center>
+      <span className={props.classes.title}>Abstract</span>
+    </center>
+
+    <div className={props.classes.info}>
+      <p>Insert the abstract here when it is provided.</p>
+    </div>
   </div>;
 
-export default Abstract;
+export default withStyles(styles)(Abstract);

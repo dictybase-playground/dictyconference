@@ -1,14 +1,19 @@
 import React from "react";
-import { Body, Title, SubTitle, Details } from "../Version2Styles";
+import { textStyles as styles } from "../Version2Styles";
+import { withStyles } from "material-ui/styles";
 
-const HomeBody = () =>
-  <div>
-    <Body>
-      <Title>Dicty 2018</Title>
-      <SubTitle>Annual International Dictyostelium Conference</SubTitle>
-      <Details>August 12 to August 16, 2018, The Netherlands</Details>
-      <Details>Egmond aan Zee</Details>
-    </Body>
+const HomeBody = props =>
+  <div className={props.classes.container}>
+    <center>
+      <div className={props.classes.title}>Dicty 2018</div>
+      <div className={props.classes.subtitle}>
+        Annual International Dictyostelium Conference
+      </div>
+      <div className={props.classes.info}>
+        <p>August 12 to August 16, 2018, The Netherlands, Egmond aan Zee</p>
+        <p>Organized by Arjan Kortholt and Peter van Haastert</p>
+      </div>
+    </center>
   </div>;
 
-export default HomeBody;
+export default withStyles(styles)(HomeBody);

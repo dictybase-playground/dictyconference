@@ -1,12 +1,16 @@
 import React from "react";
-import { Body, Title, Details } from "../Version2Styles";
+import { textStyles as styles } from "../Version2Styles";
+import { withStyles } from "material-ui/styles";
 
-const Agenda = () =>
-  <div>
-    <Body>
-      <Title>Agenda</Title>
-      <Details>Agenda to be added soon.</Details>
-    </Body>
+const Agenda = props =>
+  <div className={props.classes.container}>
+    <center>
+      <span className={props.classes.title}>Agenda</span>
+    </center>
+
+    <div className={props.classes.info}>
+      <p>Insert the agenda here when it is provided.</p>
+    </div>
   </div>;
 
-export default Agenda;
+export default withStyles(styles)(Agenda);

@@ -2,7 +2,7 @@
   "name": "dictyconference",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dictybase.github.io/dictyconference",
+  "homepage": "https://dictybase-playground.github.io/dictyconference",
   "presets": [
     "flow"
   ],

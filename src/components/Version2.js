@@ -12,7 +12,7 @@ import Button from "material-ui/Button";
 import AppBar from "material-ui/AppBar";
 import Toolbar from "material-ui/Toolbar";
 
-import { Route, Link, Switch } from "react-router-dom";
+import { Redirect, Route, Link, Switch } from "react-router-dom";
 
 import Grid from "material-ui/Grid";
 
@@ -78,6 +78,7 @@ const Version2 = props =>
     </AppBar>
 
     <Switch>
+      <Redirect from="/version2" exact to="/version2/home" />
       <Route path="/version2/home" component={HomeBody} />
       <Route path="/version2/venue" component={Venue} />
       <Route path="/version2/travel" component={Travel} />

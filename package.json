@@ -21,13 +21,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "rsync -av build/ docs/ && git add docs && git commit -m 'new build' && git push origin master",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-flow": "^6.23.0",
-    "gh-pages": "^1.1.0"
+    "babel-preset-flow": "^6.23.0"
   }
 }
